@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "craftops",
 	"version": "${version}",
-	"name": "Example mod",
+	"name": "CraftOps",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -16,16 +16,16 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"vision.comcord.CraftOpsMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"vision.comcord.CraftOpsModClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"craftops.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "craftops.client.mixins.json",
 			"environment": "client"
 		}
 	],
